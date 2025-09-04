@@ -1,0 +1,106 @@
+.header{
+   width: 100%;
+
+   .top-header{
+    width: 100%;
+    background-color: black;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    .header-select{
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+         align-items: center;
+    
+        div{
+            color: var(--Text, rgba(250, 250, 250, 1));
+display: flex;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0%;
+text-align: left;
+          .h14{
+width: 68px;
+height: 24px;
+color: var(--Text, rgba(250, 250, 250, 1));
+cursor: pointer;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+text-decoration-line: underline;
+         }   }
+   .select{
+    background-color: black;
+    color: aliceblue;
+    width: 50px;
+    height: 20px;
+   } }
+   }
+}
+.head{
+    position: relative;
+width: 1170px;
+height: 38px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+margin: 0 auto;
+margin-top: 40px;
+.logo{
+    width: 118px;
+height: 24px;
+}
+.Link{
+width: 367px;
+height: 24px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-left: 190px;
+}
+}
+.input{
+width: 243px;
+height: 38px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 7px 12px 7px 20px;
+border-radius: 4px;
+background: var(--Secondary, rgba(245, 245, 245, 1));
+margin-left: 148px;
+overflow: hidden;
+}
+.btn{
+position: absolute;
+height: 32px;
+width: 32px;
+border: none;
+left: 1010px;
+background: var(--Secondary, rgba(245, 245, 245, 1));
+
+}
+.love{
+    margin-left: 24px;
+}
+.cart{
+    margin-left: 20px;
+}
+.line{
+    
+    width: 1350px;
+    height: 1px;
+    border: 0.5px solid var(--Button, rgba(0, 0, 0, 1));
+opacity: 0.3;
+margin-top: 20px;
+}

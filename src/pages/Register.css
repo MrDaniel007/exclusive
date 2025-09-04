@@ -1,0 +1,176 @@
+.border{
+width: 1305px;
+height: 781px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+border: 1px solid red;
+}
+.width{
+    width: 100%;
+}
+.img{
+width: 805px;
+height: 781px;
+}
+.account{
+width: 371px;
+height: 530px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+border: 1px solid red;
+margin: 0 auto;
+}
+.l{
+    /* Create an account */
+width: 339px;
+height: 30px;
+color: var(--Text2, rgba(0, 0, 0, 1));
+
+font-family: Inter;
+font-size: 36px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 4%;
+text-align: left;
+}
+.acc1{
+    /* Frame 753 */
+width: 339px;
+height: 78px;
+/* Автолейаут */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+
+
+}
+.acc1 p{
+    /* Enter your details below */
+width: 191px;
+height: 24px;
+color: var(--Text2, rgba(0, 0, 0, 1));
+
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+.login{
+    margin-top: 25px;
+    /* Frame 757 */
+width: 370px;
+height: 176px;
+/* Автолейаут */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+gap: undefined;
+
+
+}
+.input1{
+width: 360px;
+height: 32px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+border: none;
+outline: none;
+}
+.input2{
+width: 360px;
+height: 32px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+border: none;
+outline: none;
+
+}
+.input3{
+width: 360px;
+height: 32px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+border: none;
+outline: none;
+
+}
+.login hr{
+width: 370px;
+height: 1px;
+opacity: 0.5;
+margin-top: -55px;
+}
+.btn5{
+    /* Button */
+width: 371px;
+height: 56px;
+/* Автолейаут */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 122px 16px 122px;
+color: white;
+border-radius: 4px;
+background: var(--Button2, rgba(219, 68, 68, 1));
+border: none;
+margin-top: 30px;
+}
+.btn6{
+width: 371px;
+height: 56px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 16px 86px 16px 86px;
+margin-top: 20px;
+box-sizing: border-box;
+border: 1px solid rgba(0, 0, 0, 0.4);
+border-radius: 4px;
+}
+.btn5 img{
+width: 20px;
+height: 20px;
+}
+.t{
+    color: var(--Text2, rgba(0, 0, 0, 1));
+
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
+}
+.but{
+    /* Frame 750 */
+width: 248px;
+height: 28px;
+/* Автолейаут */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: undefined;
+margin: 0 auto;
+margin-top: 60px;
+}
+.but p{
+display: flex;
+justify-content: center;
+align-items: center;
+}
