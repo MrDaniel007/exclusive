@@ -12,14 +12,18 @@ import { useTranslation } from 'react-i18next'
 function Header() {
   const {items} = useSelector((state) => state.favorite)
   const {itema} = useSelector((state) => state.buy)
-  const {t} = useTranslation()
+  const {t, i18n} = useTranslation()
+  function change(e) {
+    let lng = e.target.value;
+    i18n.changeLanguage(lng)
+  }
   return (
     <header className='header'>
         <div className='top-header'>
             <div className='header-select'>
                 <div>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
                 <h3 className='h14'>ShopNow</h3></div>
-                <select className='select'>
+                <select onChange={change} className='select'>
                     <option value="kg">KGZ</option>
                     <option value="en">ENG</option>
                     <option value="ru">RUS</option>
@@ -30,9 +34,9 @@ function Header() {
         <div className='head'>
           <img className='logo' src={logo} alt="" />
      <div className='Link'> <Link to="">{t("home")}</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/register">Sign Up</Link></div>
+      <Link to="/about">{t("about")}</Link>
+      <Link to="/contact">{t("contact")}</Link>
+      <Link to="/register">{t("signUp")}</Link></div>
       <input className='input' type="text" placeholder='What are you looking for?'/>
       <button className='btn'><img src={search} alt="" /></button>
     <Link to="/wishlist">  <img className='love' src={love} alt="" /><p className='numbers'>{items.length}</p></Link>
