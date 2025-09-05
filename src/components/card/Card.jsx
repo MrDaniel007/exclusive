@@ -3,6 +3,7 @@ import "./Card.scss"
 import like from "../../assets/love.svg"
 import { useDispatch } from 'react-redux'
 import { addWish } from '../../redux/wish/wishSlice'
+import { addCart } from '../../redux/cartS/cartSlice'
 
 function Card({cart}) {
   const dispatch = useDispatch()
@@ -11,13 +12,13 @@ function Card({cart}) {
       <div className="board">
         <img className="productImage" src={cart.thumbnail} alt="" />
         <div className="cardButton">
-           <div><img onClick={() => dispatch(addWish(cart))} src={like} alt="" /></div>
+           <div><img className='imgg' onClick={() => dispatch(addWish(cart))} src={like} alt="" /></div>
         {/* <div><img src={icon2} alt="" /></div> */} 
         </div>
-        <div className="discount">
+        <div className="discounts">
           <p>-40%</p>
         </div>
-        <button className="cartBtn">Add To Cart</button>
+        <button onClick={() =>  dispatch(addCart(cart))} className="hhhh">Add To Cart</button>
       </div>
 
       <div className="info">

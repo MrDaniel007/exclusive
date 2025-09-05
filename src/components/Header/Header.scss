@@ -86,7 +86,8 @@ position: absolute;
 height: 32px;
 width: 32px;
 border: none;
-left: 1010px;
+top: 0;
+left: 1015px;
 background: var(--Secondary, rgba(245, 245, 245, 1));
 
 }
@@ -103,4 +104,30 @@ background: var(--Secondary, rgba(245, 245, 245, 1));
     border: 0.5px solid var(--Button, rgba(0, 0, 0, 1));
 opacity: 0.3;
 margin-top: 20px;
+}
+.numbers{
+    position: absolute;
+    top: 5px;
+    left: 1100px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(219, 68, 68, 1);
+    color: white;
+}
+.num{
+    top: 5px;
+    left: 1155px;
+    position: absolute;
+        width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(219, 68, 68, 1);
+    color: white;
 }

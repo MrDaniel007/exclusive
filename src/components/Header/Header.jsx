@@ -7,9 +7,12 @@ import love from "../../assets/love.svg"
 import cart from "../../assets/cart.svg"
 import Bunner from '../../pages/Bunner'
 import { useSelector } from 'react-redux'
+import { useTranslation } from 'react-i18next'
 
 function Header() {
   const {items} = useSelector((state) => state.favorite)
+  const {itema} = useSelector((state) => state.buy)
+  const {t} = useTranslation()
   return (
     <header className='header'>
         <div className='top-header'>
@@ -26,14 +29,14 @@ function Header() {
         <nav className='navbar'></nav>
         <div className='head'>
           <img className='logo' src={logo} alt="" />
-     <div className='Link'> <Link to="">Home</Link>
+     <div className='Link'> <Link to="">{t("home")}</Link>
       <Link to="/about">About</Link>
       <Link to="/contact">Contact</Link>
       <Link to="/register">Sign Up</Link></div>
       <input className='input' type="text" placeholder='What are you looking for?'/>
       <button className='btn'><img src={search} alt="" /></button>
-    <Link to="/wishlist">  <img className='love' src={love} alt="" /></Link>
-      <img className='cart' src={cart} alt="" />
+    <Link to="/wishlist">  <img className='love' src={love} alt="" /><p className='numbers'>{items.length}</p></Link>
+    <Link to="/carts"><img className='cart' src={cart} alt="" /><p className='num'>{itema.length}</p></Link>  
       </div>
       <div className='line'></div>
       </header>

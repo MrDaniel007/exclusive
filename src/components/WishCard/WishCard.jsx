@@ -12,13 +12,13 @@ function WishCard({box}) {
                 <div className='board'>
                     <img className='bagImg' src={box.thumbnail} alt="" />
                     <div className="cardButton">
-                        <div><img 
+                  <div><img 
                         onClick={() => dispatch(removeWish(box.id))} src={trash} alt="" /></div>
                     </div>
                     <div className='discount'>
-                        <p>-35%</p>
+                        <p className='pk'>-35%</p>
                     </div>
-                    <button className='cartBtn'>Add To Cart</button>
+                    <button className='cartsBtn'>Add To Cart</button>
                 </div>
 
                 <div className='info'>

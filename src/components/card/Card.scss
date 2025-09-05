@@ -69,35 +69,28 @@
     justify-content: center;
     align-items: center;
 }
-.cardButton img{
+.img{
     width: 24px;
     height: 24px;
     object-fit: contain;
 }
-.discount{
+.discounts{
     width: 55px;
     height: 26px;
     border-radius: 4px;
     background-color: rgba(219, 68, 68, 1);
     color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    padding:  0px 0px 5px 5px;
     position: absolute;
     top: 10px;
     left: 10px;
 }
-.cartBtn{
+.hhhh{
     width: 270px;
     height: 41px;
     background-color: black;
     color: white;
-    border: none;
     cursor: pointer;
-    display: none;
-    transition: 0.3s ease;
     border-radius: 6px;
 
     font-family: Poppins;
@@ -107,6 +100,7 @@
     position: absolute;
     top: 210px;
 }
+
 
 .info{
     width: 204px;
@@ -152,7 +146,7 @@
     color: gray;
 }
 
-.card:hover .cartBtn{
+.card:hover{
     display: block;
 }
 
